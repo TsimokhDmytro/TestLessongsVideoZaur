@@ -13,6 +13,6 @@ public class Test2 {
         for(String s1:array1){
             System.out.println(s1);
         }
-        System.out.println(array1.size());
+//        System.out.println(array1.size());
     }
 }
