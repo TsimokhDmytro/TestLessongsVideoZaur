@@ -115,11 +115,11 @@ public class Lesson12 {
 
             int x = 5;
             if (x > 10) {
-                System.out.println("x більше 10");
+                System.out.println("x пїЅпїЅпїЅпїЅпїЅ 10");
             } else if (x < 0) {
-                System.out.println("x менше 0");
+                System.out.println("x пїЅпїЅпїЅпїЅпїЅ 0");
             } else {
-                System.out.println("x знаходиться між 0 і 10");
+                System.out.println("x пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ 0 пїЅ 10");
             }
 
             Lesson12 test1 = new Lesson12();
