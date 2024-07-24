@@ -3,7 +3,8 @@ package Lesson24;
 public class Test4 {
     public static void main(String[] args) {
 
-    }
+            }
+
     class Employee{
         String name = "Mykola";
         int age;
@@ -15,7 +16,7 @@ public class Test4 {
             System.out.println(name + " eat");
         }
     }
-    class Teacher extends Employee implements Lesson24.Test4.Help_able {
+     class Teacher extends Employee implements Lesson24.Test4.Help_able {
         int numberOfStudents;
         public void teach(){
             System.out.println("teacher teachs");
@@ -30,10 +31,11 @@ public class Test4 {
     class Driver extends Employee implements Lesson24.Test4.Help_able, Lesson24.Test4.Swim_able {
         String nameOfTheCar;
         public void drive(){
-            System.out.println("drives");
+            System.out.println("driver drives");
         }
         public void help() {
             System.out.println("driver helps");
+            System.out.println(a);
         }
         public void putOutTheFire() {
             System.out.println("driver put out the fire");
@@ -42,7 +44,8 @@ public class Test4 {
             System.out.println("driver swims");
         }
     }
-    interface Help_able{
+   abstract public interface Help_able{
+        int a = 20;
         public abstract void help();
         void putOutTheFire();
     }

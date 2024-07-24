@@ -1,6 +1,8 @@
 package Lesson18.HomeWork;
 
 
+import java.util.Arrays;
+
 public class Sorting2 {
 
     public static int[] sorting(int[] arr) {
@@ -53,7 +55,7 @@ public class Sorting2 {
         int[] array1 = {-1, -101, 36, 2, 7, 56, 79, 32, 4, 5, 33, 8, 5, 99, 1000, 2369, -12, 0, 5};
         int[] array2 = {-1 - 101, 36, 2, -12, 0, 57, 56, 79, 32, 5, 9, 1000, 23699};
         int[] array3 = {-1, -101, 0, 2, 7, 56, 0, 32, 4, 5, 0, 8, 5, 99, 1000, 2369, -12, 0, 5};
-
+Arrays.stream(array1).sorted();
 
         printResult1(array1);
         printResult1(array2);
