@@ -1,12 +1,1 @@
-package Lesson27;
-
-import java.io.*;
-public class Test3 {
-    public static void main(String[] args) throws IOException {
-        File file = new File("test9.txt");
-        FileInputStream fis = new FileInputStream(file);
-        fis.read();
-        FileOutputStream fos = new FileOutputStream(file);
-        fos.write(100);
-    }
-}
+package Lesson27;import java.io.*;import java.util.ArrayList;import java.util.Collection;import java.util.List;public class Test3 {    public static void main(String[] args) throws IOException {//        File file = new File("test9.txt");//        FileInputStream fis = new FileInputStream(file);//        fis.read();        File file = new File("test9.txt");//        file.createNewFile();        FileInputStream fis = new FileInputStream(file);//        System.out.println("The file is present");//        StringBuilder sb = new StringBuilder();        String s = "";        for (int i = 0; i < file.length(); i++) {//            sb.append((char)((fis.read())));            s = s + (char)fis.read();        }        fis.close();//        System.out.println(sb);        System.out.println(s);//        File file = new File("test9.txt");//        FileInputStream fis = new FileInputStream(file);////        byte[] fileContent = new byte[(int) file.length()];//        fis.read(fileContent);//        fis.close();////        StringBuilder sb = new StringBuilder();//        for (byte b : fileContent) {//            sb.append((char) b);//        }////        System.out.println(sb);//        System.out.println(fis.read());//        FileOutputStream fos = new FileOutputStream(file);//        fos.write(200);//        System.out.println(fis.read());//        file.delete();    }}
